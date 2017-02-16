@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    var min = 1;
+    var max = 10;
+
+    function zufallszahl() {
+    	var elem = document.getElementById('ausgabe');
+    	elem.innerHTML = rand(min, max);
+    }
+
+    function rand(min, max) {
+    	return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+//window.onload = function() {
+
+  //document.getElementById('ausblenden').style.visibility='hidden';
+
+
+//}
+
+
+    </script>
+<style >
+
+</style>
+  </head>
+  <body>
+    <p id="ausgabe"></p>
+    	<button id="ausblenden" onclick="zufallszahl()">Start!
+    		</>
+  </body>
+</html>
